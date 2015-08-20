@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background: rgba(0,0,0,.04);
+  background: rgba(0,0,0,.02);
   font-family: "Roboto Mono", sans-serif;
   color: rgba(0,0,0,.87);
 }
@@ -30,7 +30,7 @@ a {
 /* 24/32 */
 p {
 
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   /* font-size: 24px; */
   /* line-height: 32px; */
@@ -52,7 +52,7 @@ p {
   width: 60px;
   position: relative;
   top: 5px;
-  border-radius: 8px;
+  border-radius: 4px;
   align-self: flex-start;
   margin-bottom: 40px;
   margin-right: 30px;
