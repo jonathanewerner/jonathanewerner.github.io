@@ -26,17 +26,14 @@ a {
   color: rgba(0,0,0,.54);
   text-decoration: none;
 }
-/* 34/44 */
 /* 24/32 */
 p {
 
-  font-size: 20px;
-  line-height: 30px;
-  /* font-size: 24px; */
-  /* line-height: 32px; */
+  font-size: 18px;
+  line-height: 1.5;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .wrap {
