@@ -7,53 +7,91 @@
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta name="author" content="Jonathan Glasmeyer">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+		<link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
     <title>Jonathan Glasmeyer</title>
     <style>
       body {
-        font-family: "Fira Mono", sans-serif;
-        background-color: rgba(0, 0, 0, 0.01);
+        font-family: "PT Mono", sans-serif;
         color: #222;
+        font-size: 16px;
+				line-height: 1.3;
       }
 
       main {
-        padding: 80px 20px 0;
-        margin: 0 auto;
-        max-width: 600px;
+        padding: 40px 10px 0;
+      }
+      @media only screen and (min-width: 700px) {
+        main {
+          padding: 80px 40px 0;
+          max-width: 80ch;
+        }
       }
 
       p {
-        font-size: 16px;
-        line-height: 1.7;
-        margin-bottom: 16px;
+        margin: 0;
+        padding-bottom: 1.3em;
       }
+
+      p:after {
+        content: '↵';
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        /* left: -5px; */
+        font-size: 15px;
+        opacity: 0.3;
+      }
+
+      p.without-all-that-fancy-stuff:after {
+        content: ''
+      }
+
+			.line-above:before {
+				display: block;
+				content: '--------------------------------------------------------------';
+				margin-bottom: .3em;
+			}
+
+			.space-above {
+				padding-top: 10px;
+				margin-top: 80px;
+			}
 
       a {
-        color: #888;
-        text-decoration: none;
+        color: blue;
       }
 
-      img {
-        width: 196px;
-        height: 196px;
-        margin-bottom: 32px;
-      }
     </style>
 </head>
 <body>
   <main>
-    <img src="jonathan_glasmeyer.png" alt="Jonathan Glasmeyer" />
-    <p>Hi. I'm Jonathan. I am a developer living in Hamburg, where I currently work for <a href="https://www.mesaic.co">Mesaic</a>.</p>
-    <p>I am enthusiastic about user experience and cross-platform app development.</p>
-    <p>I like open source, javascript, react, react-native, vim and the command line.</p>
-    <p>Find me on <a href="https://github.com/jonathanglasmeyer">Github</a>, <a href="https://twitter.com/jglasmeyer">Twitter</a>, <a href="https://www.linkedin.com/in/jonathanewerner">Linkedin</a> or <a href="mailto:glasmeyer@posteo.de">send me a mail</a>.</p>
-  </main>
+    <p>Hi. I'm Jonathan. I am a developer from Hamburg, where I work for <a href="https://www.mesaic.co">Mesaic</a>.</p>
+    <p>I am enthusiastic about user experience and product development. Javascript, React, React Native is my thing [1]</span>. I work with <a href="https://github.com/jonathanglasmeyer/dotfiles/tree/master/vim-config">vim</a> and the <a href="https://github.com/jonathanglasmeyer/dotfiles">command line</a>.</p>
+		<p>I've studied jazz guitar for a year and have been working as a freelance guitarist since I'm 20. Practicing scales 8 hours a day turned out not to be my favorite activity, so i pivoted and got a BA in Philosophy, after that another one in Computer Science [2] (both at Universität Hamburg). I've been doing software development since then, still playing guitar for fun and on weekends now and then.</p>
+		<p>
+			I like to read, mainly science fiction and UX books right now [3].<br/>
+      I love to cook.  <br />
+      I'm a proud dad and husband. <br />
+      I still love music, though I mainly listen to white noise at work. :D
+    </p>
+
+		<br />
+		<br />
+    <p class="without-all-that-fancy-stuff">
+      <a href="https://github.com/jonathanglasmeyer">Github</a> - many random experiments, some forks of open source libs I worked on, some React side/fun projects, some cli tools I wrote<br />
+      <a href="https://twitter.com/jglasmeyer">Twitter</a> - I'm here every day, mostly reading<br />
+      <a href="https://medium.com/@jonathanewerner">Medium</a> - I've written one article; it's a start. ;)<br />
+      <a href="https://www.linkedin.com/in/jonathanewerner">Linkedin</a> - more CV
+    </p>
+		<p class="line-above without-all-that-fancy-stuff">
+      [1]: I like open source a lot——<a href="https://github.com/js-dxtools/webpack-validator">webpack-validator</a> was a nice group effort, <br />for example——I don't have much time between work and family life to be very active though.
+    <br />[2]: My thesis on improving speech recognition can be read <a href="https://github.com/jonathanglasmeyer/bachelor">here</a>.
+    <br />[3]: I'm nerdy about tracking my reading history on <a href="https://www.goodreads.com/jonathanglasmeyer">Goodreads</a>.
+  </p>
+
+</main>
 </body>
 </html>
