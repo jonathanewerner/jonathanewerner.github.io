@@ -12,25 +12,14 @@ body {
   background: rgb(252, 252, 252);
 }
 
-body:after {
-  background: rgb(252, 252, 252);
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0px;
-  left: 0px;
-  right: 20px;
-  bottom: 0;
-}
-
 main {
   margin: 20px 0px 0;
-  position: absolute;
-  right: 0px;
-  /* padding: 0; */
 }
+
 @media only screen and (min-width: 700px) {
   main {
+    position: absolute;
+    right: 0px;
     margin: 40px 40px 0;
     max-width: 60ch;
   }
