@@ -1,12 +1,19 @@
 @font-face {
   font-family: "Lunchtype";
-  src: url("/Lunchtype22-Regular.ttf") format("truetype");
+  src: url("./fonts/Lunchtype22-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Lunchtype22-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Lunchtype22-Regular.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Lunchtype22-Regular.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Lunchtype22-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Lunchtype22-Regular.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Lunchtype22-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   font-family: "Lunchtype", monospace;
   font-size: 25px;
-  /* letter-spacing: 1.1px; */
   line-height: 0.9;
   letter-spacing: -1.2px;
   background: rgb(252, 252, 252);
