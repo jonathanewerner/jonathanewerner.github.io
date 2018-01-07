@@ -19,15 +19,32 @@ body {
   background: rgb(252, 252, 252);
 }
 
-main {
+#main {
   margin: 20px 0px 0;
+  position: relative;
+  padding-left: 15px;
 }
 
 @media only screen and (min-width: 700px) {
-  main {
+  #funny-line {
+    display: block;
+    position: fixed;
+    top: 51px;
+    width: 60%;
+    height: 3px;
+    left: 0;
+    z-index: -1;
+    right: 0;
+    bottom: 22px;
+    background: #222;
+  }
+
+  #main {
+    background: rgb(252, 252, 252);
     position: absolute;
     right: 0px;
     margin: 40px 40px 0;
+    padding-right: 40px;
     max-width: 60ch;
   }
 }
@@ -47,4 +64,18 @@ a {
   color: black;
   text-decoration: line-through;
 }
-ul { margin-top: 0;}
+
+ul {
+  padding-left: 20px;
+  margin-top: 0;
+  list-style: none;
+  /* margin: 0; */
+}
+li {
+  margin: 0;
+}
+li:before {
+  position: relative;
+  left: -5px;
+  content: "- ";
+}
