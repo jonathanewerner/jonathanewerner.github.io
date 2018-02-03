@@ -14,7 +14,6 @@
 body {
   font-family: "Lunchtype", sans-serif;
   font-size: 20px;
-  font-display: fallback;
   line-height: 1.1;
   letter-spacing: -.5px;
   background: rgb(252, 252, 252);
@@ -84,23 +83,10 @@ li:before {
 }
 
 /* tooltip content */
-@media only screen and (max-width: 699px) {
-  .ttc {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .tt:active .ttc {
-    display: initial;
-  }
-  body {
-    margin-bottom: 60px;
-  }
-}
 .ttc {
   display: none;
 }
+
 @media only screen and (min-width: 700px) {
   /* tooltip */
   .tt {
@@ -118,6 +104,7 @@ li:before {
   }
   .ttc {
     background: #000;
+    z-index: 10;
     padding: 8px;
     color: #fff;
     font-size: 18px;
